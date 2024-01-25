@@ -46,8 +46,7 @@ cursor: pointer;
 `;
 
 //트윗 올린거에 네임 , 포토 , 트윗 이렇게 보여주겠다
-export default function Tweet({ username, photo, tweet, userId, id }: 
-  ITweet) {
+export default function Tweet({ username, photo, tweet, userId, id }: ITweet) {
       //본인이 맞은 경우 삭제할 수 있도록 함 (확인하는 작업)
       const user = auth.currentUser;
       const onDelete = async () => {
